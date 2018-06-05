@@ -9,14 +9,14 @@
 
 import xlrd
 import numpy as np
-wb = xlrd.open_workbook("C:\\Users\\wang\\Desktop\\2.xlsx")
+wb = xlrd.open_workbook(r"F:\研究生\ME\论文\SNMI\附加材料\附加材料.xlsx")
 www=str(1)+"  "
-sh = wb.sheet_by_name('8zky')  
-h=47#起始高-1
+sh = wb.sheet_by_name('Sheet1')  
+h=4#起始高-1
 w=1#起始宽-1
 num=1
 img_n=40#测试样本数量
-conpare_n=8#算法数量
+conpare_n=3#算法数量
 for h_1 in range(h,img_n+h):
     num=num+1
     arr = []

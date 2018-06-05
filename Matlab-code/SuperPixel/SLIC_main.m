@@ -1,4 +1,4 @@
-img = imread('C:\Users\Administrator\Desktop\dog.jpg');
+img = imread('C:\Users\wang\Desktop\1.bmp');
 img_size = size(img);   %三个元素：图像的高、图像的宽、图像的通道数
 %设定超像素个数
 K = 200;
