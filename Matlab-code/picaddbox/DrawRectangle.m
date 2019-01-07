@@ -23,16 +23,16 @@ I_rgb(UpRow:UpRow + LineWidth - 1,LeftColumn:RightColumn,1) = 255;
 I_rgb(UpRow:UpRow + LineWidth - 1,LeftColumn:RightColumn,2) = 0;  
 I_rgb(UpRow:UpRow + LineWidth - 1,LeftColumn:RightColumn,3) = 0;  
 % 下面线  
-I_rgb(BottomRow:BottomRow + LineWidth - 1,LeftColumn:RightColumn,1) = 255;  
-I_rgb(BottomRow:BottomRow + LineWidth - 1,LeftColumn:RightColumn,2) = 0;  
-I_rgb(BottomRow:BottomRow + LineWidth - 1,LeftColumn:RightColumn,3) = 0;  
+I_rgb(BottomRow:BottomRow + LineWidth - 1,LeftColumn:RightColumn+ 3,1) = 255;  
+I_rgb(BottomRow:BottomRow + LineWidth - 1,LeftColumn:RightColumn+ 3,2) = 0;  
+I_rgb(BottomRow:BottomRow + LineWidth - 1,LeftColumn:RightColumn+ 3,3) = 0;  
 % 左面线  
 I_rgb(UpRow:BottomRow,LeftColumn:LeftColumn + LineWidth - 1,1) = 255;  
 I_rgb(UpRow:BottomRow,LeftColumn:LeftColumn + LineWidth - 1,2) = 0;  
 I_rgb(UpRow:BottomRow,LeftColumn:LeftColumn + LineWidth - 1,3) = 0;  
 % 右面线  
-I_rgb(UpRow:BottomRow,RightColumn:RightColumn + LineWidth - 1,1) = 255;  
-I_rgb(UpRow:BottomRow,RightColumn:RightColumn + LineWidth - 1,2) = 0;  
-I_rgb(UpRow:BottomRow,RightColumn:RightColumn + LineWidth - 1,3) = 0;  
+I_rgb(UpRow:BottomRow,RightColumn -1:RightColumn + LineWidth - 1,1) = 255;  
+I_rgb(UpRow:BottomRow,RightColumn-1:RightColumn + LineWidth - 1,2) = 0;  
+I_rgb(UpRow:BottomRow,RightColumn-1:RightColumn + LineWidth - 1,3) = 0;  
   
 end 
