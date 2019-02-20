@@ -59,3 +59,4 @@ for i in range(0,len(email)):
     else:
         browser.get('https://www.sucloud.pro/user/logout')
         browser.switch_to.window(browser.window_handles[-1])
+time.sleep(2)
