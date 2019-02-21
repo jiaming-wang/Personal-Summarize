@@ -48,6 +48,7 @@ for i in range(0,len(email)):
                 browser.execute_script("arguments[0].click();", btn_div)
                 #刷新页面查询流量
                 browser.refresh()
+                time.sleep(1)
                 remain = browser.find_element_by_xpath("//*[@id='remain']")
                 print("最新剩余流量:%s！" % remain.text)
             except:
