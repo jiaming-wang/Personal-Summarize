@@ -58,6 +58,7 @@ for i in range(0,len(email)):
     if i == len(email)-1:
         browser.close()
     else:
+        browser.get('https://console.sucloud.top/user/logout')	
         browser.get('https://www.sucloud.pro/user/logout')
         browser.switch_to.window(browser.window_handles[-1])
 time.sleep(2)
