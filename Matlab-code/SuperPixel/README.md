@@ -1,14 +1,13 @@
-### 1.run makedata.m
-### 2.run sr_quant_eval.m 
-
 ### Citation
 
 If you find the code and dataset useful in your research, please consider citing:
 
-    @inproceedings{Huang-CVPR-2015,
-        title={Single Image Super-Resolution From Transformed Self-Exemplars},
-        Author = {Huang, Jia-Bin and Singh, Abhishek and Ahuja, Narendra},
-        booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-        pages={5197--5206},
-        Year = {2015}
-    }
+@article{Radhakrishna2012SLIC,
+  title={SLIC superpixels compared to state-of-the-art superpixel methods},
+  author={Radhakrishna, Achanta and Appu, Shaji and Kevin, Smith and Aurelien, Lucchi and Pascal, Fua and Sabine, Süsstrunk},
+  journal={IEEE Transactions on Pattern Analysis & Machine Intelligence},
+  volume={34},
+  number={11},
+  pages={2274-2282},
+  year={2012},
+}
