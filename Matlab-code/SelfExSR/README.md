@@ -1,5 +1,5 @@
 ### 1.run makedata.m
-### 2.run sr_quant_eval.m 
+### 2.run sr_demo_batch.m 
 
 ### Citation
 
