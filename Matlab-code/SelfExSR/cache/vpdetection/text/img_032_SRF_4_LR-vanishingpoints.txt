@@ -1,3 +1,0 @@
-vx	vy	vz	score	numLines
-
-nLines	x1	y1	x2	y2	length
