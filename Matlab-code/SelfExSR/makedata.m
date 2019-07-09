@@ -1,12 +1,12 @@
-%%SelfExSRÖÆ×÷ÑµÁ·¼¯
+%%SelfExSRåˆ¶ä½œè®­ç»ƒé›†
 clear all; clc;
 scale=4;
-dataname='fei';%%Êı¾İ¼¯Ãû³Æ
+dataname='fei';%%æ•°æ®é›†åç§°
 if ~exist(strcat('.\data\',dataname,'\image_SRF_4')) 
     mkdir(strcat('.\data\',dataname,'\image_SRF_4'))
 end 
 for TestImgIndex =1:40
-    A=strcat('F:\ÑĞ¾¿Éú\Êı¾İ¼¯\spacenet\test\test\',num2str(TestImgIndex),'.tif');
+    A=strcat('F:\ç ”ç©¶ç”Ÿ\æ•°æ®é›†\spacenet\test\test\',num2str(TestImgIndex),'.tif');
     A=imread(A);
     A= modcrop(A, scale);
     if ndims(A) == 3
@@ -20,7 +20,7 @@ for TestImgIndex =1:40
         im= double(A1(:,:,1));
     end
     im = imresize(im,1/scale,'bicubic'); 
-    im = Add_noise(im , 20);
+%     im = Add_noise(im , 20);
     if ndims(A) == 3
         im_l_cb = imresize(im_l_cb, 1/scale,'nearest');
         im_l_cr = imresize(im_l_cr, 1/scale,'nearest');
@@ -39,10 +39,10 @@ for TestImgIndex =1:40
 end
 % 
 % for TestImgIndex =1:40
-%     A=strcat('F:\ÑĞ¾¿Éú\Êı¾İ¼¯\feiÔ­Ê¼\test\',num2str(TestImgIndex),'.bmp');
+%     A=strcat('F:\ç ”ç©¶ç”Ÿ\æ•°æ®é›†\feiåŸå§‹\test\',num2str(TestImgIndex),'.bmp');
 %     A=imread(A);
 % %     A= modcrop(A, scale);
-%     B=strcat('C:\Users\wang\Desktop\¸½¼ÓÊµÑé\blur\2\',num2str(TestImgIndex),'.png');
+%     B=strcat('C:\Users\wang\Desktop\é™„åŠ å®éªŒ\blur\2\',num2str(TestImgIndex),'.png');
 %     B=imread(B);
 % %     B= modcrop(B, scale);
 %     strw = strcat(strcat('.\data\',dataname,'\image_SRF_4\img_'),num2str(TestImgIndex, '%03d'),'_SRF_4_HR.png');
