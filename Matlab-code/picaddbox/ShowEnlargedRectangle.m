@@ -36,7 +36,7 @@ for i = 1 : size(I_rgb,3)
 end  
  
 % 对提取到的区域进行放大  
-Enlargement_Factor = 1;  
+% Enlargement_Factor = 1;  
 Interpolation_Method = 'bilinear'; %bilinear,bicubic  
 Enlarged = imresize(Patch,Enlargement_Factor,Interpolation_Method);  
 strw = strcat('1_labeled.png');
@@ -55,14 +55,14 @@ if position ==1
 else  
     EnlargedShowStartColumn = 1 + gap + LineWidth;  
 end  
-% for j = 1 : c  
-%     I_rgb(EnlargedShowStartRow - m + 1:EnlargedShowStartRow,EnlargedShowStartColumn:EnlargedShowStartColumn + n - 1,j) = Enlarged(:,:,j);   
-% end  
-% % strw = strcat('1_labeled.png');
-% % imwrite(Enlarged,strw,'png');  
-% % 对放大显示后的区域画矩形  
-% Point1 = [EnlargedShowStartRow - m + 1 - LineWidth,EnlargedShowStartColumn - LineWidth];  
-% Point2 = [EnlargedShowStartRow + 1,EnlargedShowStartColumn + n -1 + 1];  
-% I_rgb = DrawRectangle(I_rgb, Point1, Point2, LineWidth);  
+for j = 1 : c  
+    I_rgb(EnlargedShowStartRow - m + 1:EnlargedShowStartRow,EnlargedShowStartColumn:EnlargedShowStartColumn + n - 1,j) = Enlarged(:,:,j);   
+end  
+% strw = strcat('1_labeled.png');
+% imwrite(Enlarged,strw,'png');  
+% 对放大显示后的区域画矩形  
+Point1 = [EnlargedShowStartRow - m + 1 - LineWidth,EnlargedShowStartColumn - LineWidth];  
+Point2 = [EnlargedShowStartRow + 1,EnlargedShowStartColumn + n -1 + 1];  
+I_rgb = DrawRectangle(I_rgb, Point1, Point2, LineWidth);  
   
 end 
