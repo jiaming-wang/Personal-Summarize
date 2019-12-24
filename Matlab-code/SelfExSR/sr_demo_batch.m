@@ -14,9 +14,9 @@
 startup;
 
 % Set up dataset
-datasetList = {'fei'};  % Data set list: Urban100 and BSD100
+datasetList = {'rs'};  % Data set list: Urban100 and BSD100
 numDataset = length(datasetList);        % Number of datatset
-numImgDataset = [40];    % Number of image in each dataset
+numImgDataset = [1];    % Number of image in each dataset
 % SRFList{1} = [2,4];                      % Super-Resolution Factor (SRF) for Urban100 dataset
 SRFList{1} = [4];                    % Super-Resolution Factor (SRF) for BSD100 dataset
 % SRFList{3} = [8];

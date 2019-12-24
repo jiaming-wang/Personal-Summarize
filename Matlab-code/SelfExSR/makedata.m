@@ -1,12 +1,13 @@
-%%SelfExSR制作训练集
+%%SelfExSR制作训练�?
 clear all; clc;
 scale=4;
-dataname='fei';%%数据集名称
+dataname='rs';%%数据集名�?
 if ~exist(strcat('.\data\',dataname,'\image_SRF_4')) 
     mkdir(strcat('.\data\',dataname,'\image_SRF_4'))
 end 
-for TestImgIndex =1:40
-    A=strcat('F:\研究生\数据集\spacenet\test\test\',num2str(TestImgIndex),'.tif');
+for TestImgIndex =1:1
+%     A=strcat('I:\',num2str(TestImgIndex),'.tif');
+    A=strcat('I:\test.png');
     A=imread(A);
     A= modcrop(A, scale);
     if ndims(A) == 3
